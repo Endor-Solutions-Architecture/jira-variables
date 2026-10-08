@@ -65,9 +65,9 @@ Example custom fields on issue type Task:
 | Priority | `{{finding.spec.level \| label}}` |
 | Branch | `{{packageversion.spec.source_code_reference.version.ref}}{{repositoryversion.spec.version.ref}}` |
 
-`| label` turns an Endor enum into words. `{{finding.spec.level | label}}` is `Medium` when the finding level is `FINDING_LEVEL_MEDIUM`. The same filter covers the other finding levels and a few other enum prefixes, such as `LEVEL_` and `VALIDATION_STATUS_`. A value it does not recognize fails the create or update. Without the filter, `{{finding.spec.level}}` stays `FINDING_LEVEL_MEDIUM`.
+`| label` turns an Endor enum into words. `{{finding.spec.level | label}}` is `Medium` when the finding level is `FINDING_LEVEL_MEDIUM`. The same filter covers the other finding levels and a few other enum prefixes, such as `LEVEL_` and `VALIDATION_STATUS_`. A value it does not recognize is sent as null. Without the filter, `{{finding.spec.level}}` stays `FINDING_LEVEL_MEDIUM`.
 
-`{{project.meta.tags}}` is the whole list, joined with commas. Tags written as `name=value`, such as `tribe=digital-channels`, are read with one more segment: `{{project.meta.tags.tribe}}` is `digital-channels`. A name that is not in the list fails the create or update.
+`{{project.meta.tags}}` is the whole list, joined with commas. Tags written as `name=value`, such as `tribe=digital-channels`, are read with one more segment: `{{project.meta.tags.tribe}}` is `digital-channels`. A name that is not in the list is sent as null.
 
 What gets filled in depends on the aggregation type on the action policy. The proxy reads the project and finding links in the issue description Endor writes.
 
