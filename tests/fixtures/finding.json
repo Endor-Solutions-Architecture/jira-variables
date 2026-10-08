@@ -1,0 +1,99 @@
+{
+  "context": {
+    "id": "default",
+    "type": "CONTEXT_TYPE_MAIN"
+  },
+  "meta": {
+    "create_time": "2026-07-01T10:38:04.504Z",
+    "created_by": "david-learn/endorctl-scan-69f5b8c23f06b1175a2023c0-2703564a-wnmv9@k8s",
+    "description": "Unmaintained Dependency google-cloud-storage@2.19.0",
+    "index_data": {
+      "data": [
+        "@ancestor=david-learn",
+        "spec.finding_tags=FINDING_TAGS_DIRECT",
+        "spec.finding_tags=FINDING_TAGS_NORMAL",
+        "spec.finding_tags=FINDING_TAGS_REACHABLE_DEPENDENCY",
+        "spec.finding_tags=FINDING_TAGS_NOTIFICATION"
+      ],
+      "tenant": "david-learn"
+    },
+    "kind": "Finding",
+    "name": "archived_source_code_repo",
+    "parent_kind": "PackageVersion",
+    "parent_uuid": "6a44edb5006c73f62271179f",
+    "update_time": "2026-10-01T11:11:51.917997471Z",
+    "updated_by": "david-learn/endorctl-scan-69f5b8c23f06b1175a2023c0-de222ffd-rnl28@k8s",
+    "upsert_time": "2026-10-01T11:11:51.917997471Z",
+    "version": "v1"
+  },
+  "spec": {
+    "actions": {
+      "policy_uuids": [
+        "65d7814f545d147aceccad48"
+      ]
+    },
+    "approximation": false,
+    "dependency_file_paths": [
+      "pyproject.toml",
+      "poetry.lock"
+    ],
+    "ecosystem": "ECOSYSTEM_PYPI",
+    "explanation": "The source code repository for this package is archived.",
+    "extra_key": "pypi://google-cloud-storage@2.19.0",
+    "finding_categories": [
+      "FINDING_CATEGORY_SCA",
+      "FINDING_CATEGORY_OPERATIONAL"
+    ],
+    "finding_metadata": {
+      "custom": null,
+      "source_policy_info": {
+        "description": "Unmaintained packages will not address vulnerabilities or bugs. Resolution of issues in unmaintained dependencies must be handled by your organization and increases the cost of software reuse. Raise findings for unmaintained packages.",
+        "name": "Unmaintained Dependencies",
+        "tags": [
+          "policy_category=supply_chain_risk",
+          "platform=all",
+          "module=oss",
+          "policy_category=compliance",
+          "compliance=cis_github_1.1.0",
+          "policyid_cis_github=cis_github_level1_2.4.2",
+          "policyid_cis_github=cis_github_level1_3.2.1"
+        ],
+        "uuid": "65aed4a0fe608bb65b56f5b5"
+      }
+    },
+    "finding_tags": [
+      "FINDING_TAGS_DIRECT",
+      "FINDING_TAGS_NORMAL",
+      "FINDING_TAGS_REACHABLE_DEPENDENCY",
+      "FINDING_TAGS_NOTIFICATION"
+    ],
+    "last_processed": "2026-10-01T11:11:41.125090693Z",
+    "latest_version": "2.19.0",
+    "level": "FINDING_LEVEL_MEDIUM",
+    "location_urls": {
+      "poetry.lock": "https://github.com/TreetopTechie/saleor/blob/main/poetry.lock",
+      "pyproject.toml": "https://github.com/TreetopTechie/saleor/blob/main/pyproject.toml"
+    },
+    "method": "SYSTEM_EVALUATION_METHOD_DEFINITION_CONDITIONS",
+    "project_uuid": "69f5b8c23f06b1175a2023c0",
+    "proposed_version": "",
+    "relationship": "2 packages import google-cloud-storage@2.19.0 directly. See the list of all dependency paths for details.",
+    "remediation": "Assess the feasibility of migrating to a maintained software package or self-maintenance with the understanding that this software will no longer make updates available.",
+    "remediation_action": "FINDING_REMEDIATION_REVIEW",
+    "source_code_version": {
+      "ref": "main",
+      "sha": "43f5ba1b48e59ef66cf2fe4f490b45e61aaa7222"
+    },
+    "summary": "Repository python-storage is archived for dependency google-cloud-storage@2.19.0.\n2 packages import google-cloud-storage@2.19.0 directly. See the list of all dependency paths for details.",
+    "target_dependency_name": "google-cloud-storage",
+    "target_dependency_native_scope": "normal",
+    "target_dependency_package_name": "pypi://google-cloud-storage@2.19.0",
+    "target_dependency_version": "2.19.0",
+    "target_uuid": "6a44ee0121c16ca2da74a3df"
+  },
+  "tenant_meta": {
+    "namespace": "david-learn"
+  },
+  "uuid": "6a44ee0cfc31b281d73bb9f5"
+}
+

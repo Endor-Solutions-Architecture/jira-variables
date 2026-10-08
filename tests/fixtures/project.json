@@ -1,0 +1,46 @@
+{
+  "meta": {
+    "create_time": "2026-05-02T08:41:38.800Z",
+    "created_by": "david-learn/endorctl-syncorg-66d6cccaa0fe906f7733f953-73a27962-4vwlt@k8s",
+    "index_data": {
+      "data": [
+        "@ancestor=david-learn"
+      ],
+      "tenant": "david-learn"
+    },
+    "kind": "Project",
+    "name": "https://github.com/TreetopTechie/saleor.git",
+    "update_time": "2026-10-05T11:39:45.397201086Z",
+    "updated_by": "david-learn/endorctl-syncorg-66d6cccaa0fe906f7733f953-c5926194-lq9lt@k8s",
+    "version": "v1"
+  },
+  "processing_status": {
+    "disable_automated_scan": false,
+    "metadata": {
+      "full_history_scan_time": "2026-08-29T10:14:32.408288728Z"
+    },
+    "queue_time": "2026-10-05T11:16:31.868369489Z",
+    "scan_state": "SCAN_STATE_IDLE",
+    "scan_time": "2026-10-05T11:16:39.633786023Z"
+  },
+  "spec": {
+    "git": {
+      "external_installation_id": "57583824",
+      "full_name": "TreetopTechie/saleor",
+      "git_clone_url": "git@github.com:TreetopTechie/saleor.git",
+      "http_clone_url": "https://github.com/TreetopTechie/saleor.git",
+      "invalid_installation": false,
+      "organization": "TreetopTechie",
+      "path": "saleor",
+      "web_url": "https://api.github.com/TreetopTechie/saleor"
+    },
+    "internal_reference_key": "https://github.com/TreetopTechie/saleor.git",
+    "is_archived": false,
+    "platform_source": "PLATFORM_SOURCE_GITHUB"
+  },
+  "tenant_meta": {
+    "namespace": "david-learn"
+  },
+  "uuid": "69f5b8c23f06b1175a2023c0"
+}
+
